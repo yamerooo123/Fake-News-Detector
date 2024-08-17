@@ -29,7 +29,9 @@ Data Preprocessing - https://www.javatpoint.com/data-preprocessing-machine-learn
 
 2. Download the dataset from [Kaggle](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn)
 
-3. Change file path directory.
+3. Open JupyterNotebooke or whatever tool you prefer
 
-4. TBC...
+4. Change file path directory.
+
+5. TBC...
 
