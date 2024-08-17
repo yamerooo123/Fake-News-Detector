@@ -25,7 +25,7 @@ Data Preprocessing - https://www.javatpoint.com/data-preprocessing-machine-learn
 
 **Usage**
 
-1. [Git clone ](https://github.com/yamerooo123/Fake-News-Detector.git)
+1. Git clone https://github.com/yamerooo123/Fake-News-Detector.git
 
 2. Download the dataset from [Kaggle](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn)
 
