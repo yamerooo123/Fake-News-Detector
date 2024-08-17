@@ -6,6 +6,10 @@ We have decided to make an improvement on this research project: [Fake News Dete
 
 We trained our model with the RNN algorithm with "secretto hush-hush" optimization to improve the model's accuracy. Feel free to use our model!
 
+**Overview Concept**
+
+We basically applied back translation to overcome overfitting problem during model training. We also reduce the learning rate to improve the accuracy of our model. The back translation converts English to Thai and then convert it back to English. This allows the model to be more complex which resulting in "THEY BECOME SMARTER".
+
 **Kaggle Dataset:**
 [Fake News Classification Dataset](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification?resource=download&select=WELFake_Dataset.csv)
 
