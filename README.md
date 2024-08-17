@@ -10,9 +10,6 @@ We trained our model with the RNN algorithm with "secretto hush-hush" optimizati
 
 We basically applied back translation to overcome overfitting problem during model training. We also reduce the learning rate to improve the accuracy of our model. The back translation converts English to Thai and then convert it back to English. This allows the model to be more complex which resulting in "THEY BECOME SMARTER".
 
-**Kaggle Dataset:**
-[Fake News Classification Dataset](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification?resource=download&select=WELFake_Dataset.csv)
-
 **Research:**
 
 Back Translation - https://www.mdpi.com/2076-3417/13/24/13207
@@ -22,6 +19,9 @@ Back Translation Implementation - https://www.fiive.se/en/blog/backtranslation-f
 Googletrans - https://pypi.org/project/googletrans/#description
 
 Data Preprocessing - https://www.javatpoint.com/data-preprocessing-machine-learning
+
+**Kaggle Dataset:**
+[Fake News Classification Dataset](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification?resource=download&select=WELFake_Dataset.csv)
 
 **Usage**
 
