@@ -17,6 +17,8 @@ Back Translation Implementation - https://www.fiive.se/en/blog/backtranslation-f
 
 Googletrans - https://pypi.org/project/googletrans/#description
 
+Data Preprocessing - https://www.javatpoint.com/data-preprocessing-machine-learning
+
 **Usage**
 
 1. [Git clone ](https://github.com/yamerooo123/Fake-News-Detector.git)
