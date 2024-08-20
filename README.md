@@ -23,6 +23,12 @@ Data Preprocessing - https://www.javatpoint.com/data-preprocessing-machine-learn
 **Kaggle Dataset:**
 [Fake News Classification Dataset](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification?resource=download&select=WELFake_Dataset.csv)
 
+**Cleaned dataset:**
+https://drive.google.com/file/d/1kCybVkswdUVvCXDHxVd_GlYAzIkxLExr/view?usp=sharing
+
+![image](https://github.com/user-attachments/assets/48ea163d-617b-47e4-afbf-4cceb86363ae)
+
+
 **Usage**
 
 1. Git clone https://github.com/yamerooo123/Fake-News-Detector.git
