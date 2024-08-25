@@ -23,11 +23,13 @@ Data Preprocessing - https://www.javatpoint.com/data-preprocessing-machine-learn
 **Kaggle Dataset:**
 [Fake News Classification Dataset](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification?resource=download&select=WELFake_Dataset.csv)
 
-**Cleaned dataset:**
-https://drive.google.com/file/d/1kCybVkswdUVvCXDHxVd_GlYAzIkxLExr/view?usp=sharing
+**training dataset(from kaggle):**
+https://drive.google.com/file/d/1gD_Q-ksCZlJfgKA22qxpt3TujxLBw4JT/view?usp=sharing
+
+**testing dataset(from hugging_face):**
+https://drive.google.com/file/d/1fOVo2Wh4scjYNs7PjEA-wHtc3wlWGQfe/view?usp=share_link
 
 ![image](https://github.com/user-attachments/assets/48ea163d-617b-47e4-afbf-4cceb86363ae)
-
 
 **Usage**
 
@@ -40,4 +42,3 @@ https://drive.google.com/file/d/1kCybVkswdUVvCXDHxVd_GlYAzIkxLExr/view?usp=shari
 4. Change file path directory.
 
 5. TBC...
-
