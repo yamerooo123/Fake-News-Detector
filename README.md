@@ -28,7 +28,7 @@ Training dataset(from kaggle) - https://drive.google.com/file/d/1gD_Q-ksCZlJfgKA
 
 Testing dataset(from hugging_face) - https://drive.google.com/file/d/1fOVo2Wh4scjYNs7PjEA-wHtc3wlWGQfe/view?usp=share_link
 
-![image](https://github.com/user-attachments/assets/48ea163d-617b-47e4-afbf-4cceb86363ae)
+![image](https://github.com/user-attachments/assets/48ea163d-617b-47e4-afbf-4cceb86363ae)**(Figure 1. Cleaned dataset)**
 
 **STEPS**
 
@@ -38,6 +38,9 @@ Testing dataset(from hugging_face) - https://drive.google.com/file/d/1fOVo2Wh4sc
 
 3. Clean training & testing dataset(including applying the back translation)
 
-4. Use LSTM baseline model as stated in the Overview section.
+![image](https://github.com/user-attachments/assets/2d405136-bc4e-4dd9-9f89-f688f8b18179)**(Figure 2. Back translated dataset)**
 
-5. TBC...
+
+5. Use LSTM baseline model as stated in the Overview section.
+
+6. TBC...
