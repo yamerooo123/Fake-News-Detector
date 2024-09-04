@@ -22,7 +22,7 @@ Googletrans - https://pypi.org/project/googletrans/#description
 
 Data Preprocessing - https://www.javatpoint.com/data-preprocessing-machine-learning
 
-**DATASET**
+**DATASETS**
 
 Training dataset(from kaggle) - https://drive.google.com/file/d/1gD_Q-ksCZlJfgKA22qxpt3TujxLBw4JT/view?usp=sharing
 
