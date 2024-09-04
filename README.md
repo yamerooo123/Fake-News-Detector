@@ -8,7 +8,7 @@ We trained our model with the RNN algorithm with "secretto hush-hush" optimizati
 
 **Overview Concept**
 
-We basically applied back translation to overcome overfitting problem during model training. We also reduce the learning rate to improve the accuracy of our model. The back translation converts English to Thai and then convert it back to English. This allows the model to be more complex which resulting in "THEY BECOME SMARTER".
+We basically applied back translation to overcome overfitting problem during model training. We also reduce the learning rate to improve the accuracy of our model. The back translation converts English to Japanese and Spanish then convert it back to English. This allows the model to be more complex which resulting in "THEY BECOME SMARTER".
 
 **Researches:**
 
