@@ -29,14 +29,14 @@ Testing dataset(from hugging_face) - https://drive.google.com/file/d/1fOVo2Wh4sc
 
 ![image](https://github.com/user-attachments/assets/48ea163d-617b-47e4-afbf-4cceb86363ae)
 
-**Usage**
+**Steps**
 
-1. Git clone https://github.com/yamerooo123/Fake-News-Detector.git
+1. Download the dataset from [Kaggle](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn) This data will be used as a training model.
 
-2. Download the dataset from [Kaggle](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn)
+2. Download the data from [HuggingFace](https://drive.google.com/file/d/1fOVo2Wh4scjYNs7PjEA-wHtc3wlWGQfe/view). This data will be used as a testing model.
 
-3. Open JupyterNotebooke or whatever tool you prefer
+3. Clean training & testing dataset(including applying the back translation)
 
-4. Change file path directory.
+4. Use LSTM baseline model as stated in the Overview section.
 
 5. TBC...
