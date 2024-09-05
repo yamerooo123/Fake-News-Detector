@@ -6,11 +6,11 @@
 
 We have decided to make an improvement on this research project: [Fake News Detector RNN](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn).
 
-We trained our model with the RNN algorithm with "secretto hush-hush" optimization to improve the model's accuracy. Feel free to use our model!
+We trained our model with the RNN algorithm with "secretto hush-hush" optimization to improve the model's accuracy by translating data to different languages. Feel free to use our model!
 
 **GENERAL**
 
-We basically applied back translation to overcome overfitting problem during model training. We also reduce the learning rate to improve the accuracy of our model. The back translation converts English to Japanese and Spanish then convert it back to English. This allows the model to be more complex which resulting in "THEY BECOME SMARTER".
+We basically applied back translation to overcome overfitting problem during model training. We also reduce the learning rate to improve the accuracy of our model. The back translation converts English to Japanese to Spanish then convert it back to English. This allows the model to be more complex resulting in "IT BECOMES SMARTER".
 
 **RESEARCHES**
 
