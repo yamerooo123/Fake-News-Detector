@@ -4,7 +4,7 @@ We have decided to make an improvement on this research project: [Fake News Dete
 and use this as the baseline model 
 
 ## Base Model
-we use dataset from [Kaggle](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification), split it train:test 80:20
+We use dataset from [Kaggle](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification), split it train:test 80:20
 , use model architect of this notebook [Fake News Detector RNN](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn). Create a ModelCheckpoint callback that saves the model's weights every 5 epochs ,Create an EarlyStopping callback that stops training when the validation loss has not improved for 3 consecutive epochs here is result:
 
 ![baseline](model/EscoreBaseModel.png)
@@ -22,7 +22,7 @@ The training loss is very low, near zero, while the validation loss starts at a 
 The growing gap between training and validation loss is another indicator of overfitting. This shows that while the model is learning the training data perfectly, it is struggling to generalize to the validation data.
 
 ## Model 1
-we do the same but we use dataset from [Kaggle](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification) for trainning only and use another source [HuggingFace](https://huggingface.co/datasets/Cartinoe5930/Politifact_fake_news)
+We do the same but we use dataset from [Kaggle](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification) for trainning only and use another source [HuggingFace](https://huggingface.co/datasets/Cartinoe5930/Politifact_fake_news)
 for test, here is the result:
 
 ![baseline](model/EscoreModel1.png)
@@ -37,22 +37,21 @@ Training loss decreases steadily, but validation loss increases after the first 
 
 ## Model 2
 
+We apply data augmentation techniques (synonym replacement, random insertion, and random deletion) to increase training data diversity, and by increasing the embedding size and LSTM units for richer word representations and better pattern recognition. Regularization techniques like increased dropout and L2 regularization were added to prevent overfitting. The batch size was reduced for better generalization, and early stopping and checkpoints were implemented to optimize training. These changes enhance the model's ability to generalize, handle complex patterns, and reduce overfitting, leading to better fake news detection performance.
 
+![baseline](model2/EscoreModel2.png)
 
-**STEPS**
+![baseline](model2/model2result.png)
 
-1. Download the dataset from [Kaggle](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn) This data will be used as the training model.
+**Model Accuracy:** The training accuracy reaches near 100%, but the validation accuracy is relatively stable, around 98.5%, with smaller fluctuations compared to the first image.
 
-2. Download the data from [HuggingFace](https://drive.google.com/file/d/1fOVo2Wh4scjYNs7PjEA-wHtc3wlWGQfe/view). This data will be used as the testing model.
+**Model Loss:** The training loss decreases sharply, and while the validation loss fluctuates, it remains relatively stable and lower than in the first set of plots.
+The second model shows less fluctuation in the validation accuracy and smaller divergence between the training and validation losses, even though there's some fluctuation in validation loss.
 
-3. Clean training & testing dataset(including applying the back translation)
+The model2 is better overall because:
+ - It has more stable validation accuracy with fewer fluctuations.
+ - The validation loss does not increase drastically like in the model 1.
 
-![image](https://github.com/user-attachments/assets/2d405136-bc4e-4dd9-9f89-f688f8b18179)**(Figure 2. Back translated dataset)**
-
-
-5. Use LSTM baseline model as stated in the Overview section.
-
-6. TBC...
 
 ## **RESEARCHES & REFERENCE**
 
