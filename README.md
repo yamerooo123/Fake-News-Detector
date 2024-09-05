@@ -40,7 +40,7 @@ Back translated trained dataset - https://drive.google.com/drive/folders/194XyOl
 
 2. Download the data from [HuggingFace](https://drive.google.com/file/d/1fOVo2Wh4scjYNs7PjEA-wHtc3wlWGQfe/view). This data will be used as the testing model.
 
-3. Clean training & testing dataset(including applying the back translation) using this [1stCode](https://github.com/yamerooo123/Political-Fake-News-Detector-NLP/blob/main/0.PreprocessedDataset.ipynb)
+3. Clean training & testing dataset(including applying the back translation) using this [1stCode](https://github.com/yamerooo123/Political-Fake-News-Detector-NLP/blob/main/0.PreprocessedDataset.ipynb) and [2ndCode](https://github.com/yamerooo123/Political-Fake-News-Detector-NLP/blob/main/4.Back_Translate.ipynb)
 
 ![image](https://github.com/user-attachments/assets/2d405136-bc4e-4dd9-9f89-f688f8b18179)**(Figure 2. Back translated dataset)**
 
