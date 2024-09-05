@@ -1,6 +1,6 @@
 # Fake News Detector - Deep Learning Machine University Project
 
-We have decided to make an improvement on this research project: [Fake News Detector RNN](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn).
+We have decided to make an improvement on this [Fake News Detector RNN](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn) notebook
 and use this as the baseline model 
 
 ## Base Model
