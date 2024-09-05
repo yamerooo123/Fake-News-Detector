@@ -28,7 +28,11 @@ Training dataset(from kaggle) - https://drive.google.com/file/d/1gD_Q-ksCZlJfgKA
 
 Testing dataset(from hugging_face) - https://drive.google.com/file/d/1fOVo2Wh4scjYNs7PjEA-wHtc3wlWGQfe/view?usp=share_link
 
-![image](https://github.com/user-attachments/assets/48ea163d-617b-47e4-afbf-4cceb86363ae)**(Figure 1. Cleaned dataset)**
+Back translated trained dataset - https://drive.google.com/drive/folders/194XyOld3xy0rNo-5QGjM_DSsuC0zbNDI
+
+![image](https://github.com/user-attachments/assets/72aade97-bc93-49d7-a43a-80d3af4a433c)
+
+**(Figure 1. Cleaned dataset)**
 
 **STEPS**
 
