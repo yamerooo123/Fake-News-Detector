@@ -78,7 +78,6 @@ here is the result:
 
 ![img](05_Model3/EscoreModel3.png)
 
-![img](05_Model3/model3.png)
 
  the model performs well on the training data, the increasing validation loss and fluctuating accuracy indicate overfitting.
 
