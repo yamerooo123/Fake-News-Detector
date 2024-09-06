@@ -3,8 +3,7 @@
 - 6311374 Suphawith Phusanbai
 - 6420063 Kritsada Kruapat
   
-We have decided to make an improvement on this [Fake News Detector RNN](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn) notebook
-and use this as the baseline model 
+We have decided to make an improvement on this [Fake News Detector RNN](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn) notebook and use this as the baseline model (lstm model)
 ## Clean & tokenization data :
 
 [Clean & tokenize Kaggle dataset](https://drive.google.com/file/d/1gD_Q-ksCZlJfgKA22qxpt3TujxLBw4JT/view?usp=share_link)
@@ -77,9 +76,23 @@ this model use back translation dataset only for train and use hugging_face for 
 here is the result:
 
 ![img](05_Model3/EscoreModel3.png)
+![img](05_Model3/model3.png)
 
+the model performs well on the training data, the increasing validation loss and fluctuating accuracy indicate overfitting.
 
- the model performs well on the training data, the increasing validation loss and fluctuating accuracy indicate overfitting.
+# Application:
+This is for who want to quickly assess the authenticity of news articles and understand the likelihood of encountering fake news based on content analysis. 
+
+How It Works:
+1. **Enter URL:** Users can input the URL of a news article they want to analyze. The app scrapes the text from the webpage and analyzes it for authenticity.
+
+2. **Preprocess the Text:** The app processes the text using a pre-trained tokenizer to convert it into sequences that the machine learning model can understand.
+
+3. **Model Prediction:** The app runs the preprocessed text through a machine learning model to determine whether the article is likely fake. It displays the result as a percentage chance of being fake.
+
+![img](streamlit.png)
+
+we will push it on hugghing space which you can play or try our model soon! let's finish model part first
 
 ## **RESEARCHES & REFERENCE**
 
