@@ -1,4 +1,4 @@
-# Fake News Detector - Deep Learning Machine University Project
+# Fake News Detector - Deep Learning University Project
 
 - 6311374 Suphawith Phusanbai
 - 6420063 Kritsada Kruapat
