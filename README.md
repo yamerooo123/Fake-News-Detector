@@ -2,6 +2,15 @@
 
 We have decided to make an improvement on this [Fake News Detector RNN](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn) notebook
 and use this as the baseline model 
+## Clean dataset:
+
+1. **Remove Unnamed Columns:** Any unnamed columns are removed to clean up the dataset.
+2. **Handle Missing Values:** Missing or empty values in the `back_translated_text` column are filled with the word "missing."
+3. **Convert to Lowercase:** All text in the `back_translated_text` column is converted to lowercase.
+4. **Remove Punctuation:** Punctuation is removed from the text to leave only words and spaces.
+5. **Remove Stopwords:** Common words (like "the", "and", "is") that don't add much meaning are removed using NLTK’s stopwords.
+6. **Tokenization:** The cleaned text is split into individual words (tokens), excluding non-alphanumeric characters.
+7. **Lemmatization:** Words are reduced to their base form (e.g., "running" becomes "run") to standardize them for better processing.
 
 ## Base Model
 We use dataset from [Kaggle](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification), split it train:test 80:20
