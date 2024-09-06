@@ -80,6 +80,22 @@ here is the result:
 
 the model performs well on the training data, the increasing validation loss and fluctuating accuracy indicate overfitting.
 
+## Model 4
+We use combine original dataset(kaggle) + back-translate + basic augmention (synonym replacement, random insertion, and random deletion) as train dataset, Length of combined dataset (original + augmented): 408516 
+
+and do the same as model4
+here is the result:
+
+![img](06_Model4/EscoreModel4.png)
+![img](06_Model4/model4Result.png)
+
+**Accuracy:** The training accuracy reaches almost 100%, but there is some fluctuation in validation accuracy, which indicates some overfitting.
+
+**Loss:** The validation loss increases as the epochs go by, while the training loss keeps decreasing, which is a sign of overfitting.
+
+as this time model 2 is Best balance between training and validation performance
+
+
 # Application:
 This is for who want to quickly assess the authenticity of news articles and understand the likelihood of encountering fake news based on content analysis. 
 
@@ -104,4 +120,9 @@ Googletrans - https://pypi.org/project/googletrans/#description
 
 Data Preprocessing - https://www.javatpoint.com/data-preprocessing-machine-learning
 
-Basic NLP Augmentation - https://maelfabien.github.io/machinelearning/NLP_8/#
+Basic NLP Augmentation 
+
+https://maelfabien.github.io/machinelearning/NLP_8/#
+
+https://www.kaggle.com/code/andreshg/nlp-glove-bert-tf-idf-lstm-explained/notebook
+
