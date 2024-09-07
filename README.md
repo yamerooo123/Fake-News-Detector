@@ -103,6 +103,28 @@ Validation Loss: Decreases initially but fluctuates in later epochs, showing sig
 
 Model 4 shows slightly less overfitting because it has more stable validation accuracy and less fluctuation in validation loss compared to Model 2. However, both models exhibit some degree of overfitting.
 
+## Model 5
+
+**LSTM Units:** In previous model, the models used 64 LSTM units. In this version, the LSTM units have been reduced to 16 to prevent overfitting by limiting model complexity.
+
+**Dropout Rate:** The dropout rate has been significantly increased from 0.5 to 0.7 to improve regularization. This helps the model generalize better to unseen data by reducing reliance on certain neurons during training.
+
+**Batch Normalization:** This version introduces Batch Normalization after each LSTM and Dense layer to stabilize learning by normalizing inputs across mini-batches.
+Dense Layers: The new model uses 64 and 32 units in the dense layers, with L2 regularization applied to both. This is a modification from previous versions where dense layers were larger (128 units).
+
+**Learning Rate Reduction:** A ReduceLROnPlateau callback has been introduced to reduce the learning rate dynamically when the model's validation loss plateaus. This encourages better convergence in the later stages of training. (reduce if lose doesn't increase 2 epoch)
+
+**Reduced Batch Size:** The batch size has been lowered from 32 in previous models to 16 in this version, allowing for finer gradient updates, which can help with generalization
+
+![img](07_Model5/EscoreModel5.png)
+![img](07_Model5/model5result.png)
+
+**Improvement :**
+
+This model shows better performance compared to previous versions. The validation accuracy is stable, and the validation loss is not fluctuating wildly, indicating that the model is generalizing well without severe overfitting.
+
+Less Overfitting: Compared to the other models, this one seems to have reduced overfitting. The steady validation accuracy and relatively stable validation loss support this observation.
+
 # Application:
 This is for who want to quickly assess the authenticity of news articles and understand the likelihood of encountering fake news based on content analysis. 
 
