@@ -81,19 +81,25 @@ the model performs well on the training data, the increasing validation loss and
 
 ## Model 4
 We use combine original dataset(kaggle) + back-translate + basic augmention (synonym replacement, random insertion, and random deletion) as train dataset, Length of combined dataset (original + augmented): 408516 
+and also do this technique:
 
-and do the same as model4
+- BatchNormalization: This normalizes the output of the previous layer, stabilizing training and improving generalization
+-  ReduceLROnPlateau: Reduces the learning rate if the validation loss stops improving, helping the model converge better.
+-  Learning Rate: Initially set to 0.001 with the Adam optimizer, and will reduce as the model plateaus.
+
 here is the result:
 
 ![img](06_Model4/EscoreModel4.png)
 ![img](06_Model4/model4Result.png)
 
-**Accuracy:** The training accuracy reaches almost 100%, but there is some fluctuation in validation accuracy, which indicates some overfitting.
 
-**Loss:** The validation loss increases as the epochs go by, while the training loss keeps decreasing, which is a sign of overfitting.
+Training Accuracy: Increases steadily and approaches 1.0, which could indicate overfitting.
 
-as this time model 2 is Best balance between training and validation performance
+Validation Accuracy: Peaks around epoch 4 and then fluctuates. The performance doesn’t degrade too much but shows signs of variance.
 
+Training Loss: Steadily decreases towards zero, which could suggest that the model is fitting the training data well.
+
+Validation Loss: Decreases initially but fluctuates in later epochs, showing signs of overfitting.
 
 # Application:
 This is for who want to quickly assess the authenticity of news articles and understand the likelihood of encountering fake news based on content analysis. 
