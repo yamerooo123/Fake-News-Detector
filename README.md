@@ -101,6 +101,8 @@ Training Loss: Steadily decreases towards zero, which could suggest that the mod
 
 Validation Loss: Decreases initially but fluctuates in later epochs, showing signs of overfitting.
 
+Model 4 shows slightly less overfitting because it has more stable validation accuracy and less fluctuation in validation loss compared to Model 2. However, both models exhibit some degree of overfitting.
+
 # Application:
 This is for who want to quickly assess the authenticity of news articles and understand the likelihood of encountering fake news based on content analysis. 
 
