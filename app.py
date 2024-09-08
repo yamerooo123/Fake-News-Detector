@@ -108,4 +108,4 @@ else:
     st.info("Please enter a URL to start analyzing.")
 
 # Disclaimer
-st.write("Disclaimer: This tool uses machine learning algorithms to predict the authenticity of news articles. While it aims to be accurate, it should not be solely relied upon for making critical decisions.")
+st.write("Disclaimer: This tool uses deeplearning to predict the authenticity of news articles. While it aims to be accurate, it should not be solely relied upon for making critical decisions.")
