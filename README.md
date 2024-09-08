@@ -17,8 +17,9 @@ We have decided to make an improvement on this [Fake News Detector RNN](https://
 5. **Remove Stopwords:** Common words (like "the", "and", "is") that don't add much meaning are removed using NLTK’s stopwords.
 6. **Tokenization:** The cleaned text is split into individual words (tokens), excluding non-alphanumeric characters.
 7. **Lemmatization:** Words are reduced to their base form (e.g., "running" becomes "run") to standardize them for better processing.
+   
+---
 
-# .
 #  🔎🔬🧑🏽‍🔬🧪🔬🔎 Time to Experiment 🔎🧑🏽‍🔬🔬🧪🧪🔬
 ## Base Model
 We use dataset from [Kaggle](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification), Clean & tokenization data  then split it train:test 80:20
@@ -105,6 +106,8 @@ Model 4 shows slightly less overfitting because it has more stable validation ac
 
 ## Model 5
 
+We use combine original dataset(kaggle) + back-translate + basic augmention (synonym replacement, random insertion, and random deletion) also but adjust this
+
 **LSTM Units:** In previous model, the models used 64 LSTM units. In this version, the LSTM units have been reduced to 16 to prevent overfitting by limiting model complexity.
 
 **Dropout Rate:** The dropout rate has been significantly increased from 0.5 to 0.7 to improve regularization. This helps the model generalize better to unseen data by reducing reliance on certain neurons during training.
@@ -124,6 +127,54 @@ Dense Layers: The new model uses 64 and 32 units in the dense layers, with L2 re
 This model shows better performance compared to previous versions. The validation accuracy is stable, and the validation loss is not fluctuating wildly, indicating that the model is generalizing well without severe overfitting.
 
 Less Overfitting: Compared to the other models, this one seems to have reduced overfitting. The steady validation accuracy and relatively stable validation loss support this observation.
+
+## Model 6
+
+Overly complex models with too many parameters can overfit the training data. 
+
+To simplify, we :
+- Decrease the number of LSTM units (e.g., reduce from 16 to 8 units).
+- Reduce the number of layers.
+- Consider smaller dense layers (e.g., 32 units instead of 64 in your dense layers).
+
+![img](08_Model6/EscoreModel6.png)
+![img](08_Model6/Model6result.png)
+
+**Accuracy:**
+
+The training accuracy climbs rapidly and continues to increase, almost reaching 1.0.
+
+Validation accuracy seems to plateau after epoch 2, maintaining around 0.97 to 0.98.
+
+**Loss:**
+
+The training loss decreases consistently, but the validation loss starts increasing after epoch 2, indicating overfitting.
+
+The gap between training loss and validation loss widens over epochs, which is another sign of overfitting.
+
+---
+
+# Conclusion: Why Model 5 is the Best Choice for the Application
+
+After experimenting with various models and strategies, **Model 5** stands out as the most balanced and effective model for the fake news detection task:
+
+- **Model Accuracy:** 
+  - Model 5 shows a stable and high validation accuracy, hovering around **98%**. The training accuracy reaches almost 100%, but the validation accuracy doesn't fluctuate much, showing that the model has learned to generalize better than the other models.
+  
+- **Model Loss:**
+  - The validation loss is relatively stable and does not increase dramatically as seen in earlier models. This means Model 5 avoids severe overfitting, maintaining a strong balance between training and validation performance.
+
+## **Overfitting Reduction:**
+
+- **Model 1** and **Model 2** exhibited strong signs of overfitting with significant gaps between training and validation accuracy/loss.
+- **Model 3** and **Model 4** applied more sophisticated techniques (like back translation and data augmentation), but they still showed signs of overfitting, with fluctuating validation loss.
+
+**Model 5**, however, strikes the perfect balance with:
+- **Less overfitting** compared to earlier models.
+- **More stable validation performance**, making it more reliable for real-world applications.
+
+Model 5 provides the best combination of accuracy, stability, and generalization. It successfully balances training and validation performance, avoids overfitting, and delivers reliable predictions, making it the optimal choice for the fake news detection application
+
 
 # Application:
 This is for who want to quickly assess the authenticity of news articles and understand the likelihood of encountering fake news based on content analysis. 
