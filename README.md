@@ -11,8 +11,8 @@ We have decided to make an improvement on this [Fake News Detector RNN](https://
 [Clean & tokenize Hugging Face dataset](https://drive.google.com/file/d/1fOVo2Wh4scjYNs7PjEA-wHtc3wlWGQfe/view?usp=sharing)
 
 1. **Remove Unnamed Columns:** Any unnamed columns are removed to clean up the dataset.
-2. **Handle Missing Values:** Missing or empty values in the `back_translated_text` column are filled with the word "missing."
-3. **Convert to Lowercase:** All text in the `back_translated_text` column is converted to lowercase.
+2. **Handle Missing Values:** Missing or empty values in the `text` column are filled with the word "missing."
+3. **Convert to Lowercase:** All text in the `text` column is converted to lowercase.
 4. **Remove Punctuation:** Punctuation is removed from the text to leave only words and spaces.
 5. **Remove Stopwords:** Common words (like "the", "and", "is") that don't add much meaning are removed using NLTK’s stopwords.
 6. **Tokenization:** The cleaned text is split into individual words (tokens), excluding non-alphanumeric characters.
