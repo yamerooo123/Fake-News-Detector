@@ -188,7 +188,7 @@ How It Works:
 
 ![img](streamlit.png)
 
-[we will push it on hugghing space which you can play or try our model soon! let's finish model part first](https://huggingface.co/spaces/kritsadaK/Fake_News_Detection)
+[you can play in this hugging face space](https://huggingface.co/spaces/kritsadaK/Fake_News_Detection)
 
 ## **RESEARCHES & REFERENCE**
 
