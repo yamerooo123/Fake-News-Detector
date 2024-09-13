@@ -3,7 +3,7 @@
 - 6311374 Suphawith Phusanbai
 - 6420063 Kritsada Kruapat
   
-We have decided to make an improvement on this [Fake News Detector RNN](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn) notebook and use this as the baseline model (lstm model)
+We have decided to make an improvement and reduce overfiting on this [Fake News Detector RNN](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn) notebook and use this as the baseline model (lstm model)
 ## Clean & tokenization data :
 
 [Clean & tokenize Kaggle dataset](https://drive.google.com/file/d/1gD_Q-ksCZlJfgKA22qxpt3TujxLBw4JT/view?usp=share_link)
