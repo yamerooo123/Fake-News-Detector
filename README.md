@@ -158,12 +158,6 @@ The gap between training loss and validation loss widens over epochs, which is a
 
 After experimenting with various models and strategies, **Model 5** stands out as the most balanced and effective model for the fake news detection task:
 
-- **Model Accuracy:** 
-  - Model 5 shows a stable and high validation accuracy, hovering around **98%**. The training accuracy reaches almost 100%, but the validation accuracy doesn't fluctuate much, showing that the model has learned to generalize better than the other models.
-  
-- **Model Loss:**
-  - The validation loss is relatively stable and does not increase dramatically as seen in earlier models. This means Model 5 avoids severe overfitting, maintaining a strong balance between training and validation performance.
-
 ## **Overfitting Reduction:**
 
 - **Model 1** and **Model 2** exhibited strong signs of overfitting with significant gaps between training and validation accuracy/loss.
@@ -182,7 +176,7 @@ This is for who want to quickly assess the authenticity of news articles and und
 How It Works:
 1. **Enter URL:** Users can input the URL of a news article they want to analyze. The app scrapes the text from the webpage and analyzes it for authenticity.
 
-2. **Preprocess the Text:** The app processes the text using a pre-trained tokenizer to convert it into sequences that the machine learning model can understand.
+2. **Preprocess the Text:** The app processes the text using a pre-trained tokenizer to convert it into sequences that deeplearing learning model can understand.
 
 3. **Model Prediction:** The app runs the preprocessed text through a machine learning model to determine whether the article is likely fake. It displays the result as a percentage chance of being fake.
 
