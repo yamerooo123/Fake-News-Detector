@@ -30,6 +30,10 @@ Create a ModelCheckpoint callback that saves the model's weights every 5 epochs 
 
 ![img](02_ModelBase/basemodel.png)
 
+![img](1.png)
+![img](2.png)
+![img](3.png)
+![img](4.png)
 **Model Accuracy:**
 The training accuracy is very high (almost 100%) after just a few epochs, while the validation accuracy is much lower and remains almost flat, around 96%.
 
@@ -176,7 +180,7 @@ This is for who want to quickly assess the authenticity of news articles and und
 How It Works:
 1. **Enter URL:** Users can input the URL of a news article they want to analyze. The app scrapes the text from the webpage and analyzes it for authenticity.
 
-2. **Preprocess the Text:** The app processes the text using a pre-trained tokenizer to convert it into sequences that deeplearing learning model can understand.
+2. **Preprocess the Text:** The app processes the text using a pre-trained tokenizer to convert it into sequences that deep learing learning model can understand.
 
 3. **Model Prediction:** The app runs the preprocessed text through a machine learning model to determine whether the article is likely fake. It displays the result as a percentage chance of being fake.
 
