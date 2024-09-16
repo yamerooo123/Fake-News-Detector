@@ -19,8 +19,6 @@ We have decided to make an improvement and reduce overfiting on this [Fake News 
 7. **Lemmatization:** Words are reduced to their base form (e.g., "running" becomes "run") to standardize them for better processing.
    
 ---
-
-#  🔎🔬🧑🏽‍🔬🧪🔬🔎 Time to Experiment 🔎🧑🏽‍🔬🔬🧪🧪🔬
 ## Base Model
 We use dataset from [Kaggle](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification), Clean & tokenization data  then split it train:test 80:20
 , use model architect of this notebook [Fake News Detector RNN](https://www.kaggle.com/code/muhammadwaseem123/fake-news-detector-rnn).
@@ -30,10 +28,6 @@ Create a ModelCheckpoint callback that saves the model's weights every 5 epochs 
 
 ![img](02_ModelBase/basemodel.png)
 
-![img](1.png)
-![img](2.png)
-![img](3.png)
-![img](4.png)
 **Model Accuracy:**
 The training accuracy is very high (almost 100%) after just a few epochs, while the validation accuracy is much lower and remains almost flat, around 96%.
 
@@ -43,6 +37,13 @@ The gap between training accuracy and validation accuracy is significant, which 
 The training loss is very low, near zero, while the validation loss starts at a moderate value and keeps increasing.
 
 The growing gap between training and validation loss is another indicator of overfitting. This shows that while the model is learning the training data perfectly, it is struggling to generalize to the validation data.
+
+#  🔎🔬🧑🏽‍🔬🧪🔬🔎 Time to Experiment 🔎🧑🏽‍🔬🔬🧪🧪🔬
+![img](1.png)
+![img](2.png)
+![img](3.png)
+![img](4.png)
+
 
 ## Model 1
 We do the same but we use dataset from [Kaggle](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification) for trainning only and use another source [HuggingFace](https://huggingface.co/datasets/Cartinoe5930/Politifact_fake_news)
