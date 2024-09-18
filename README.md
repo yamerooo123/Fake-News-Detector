@@ -109,6 +109,7 @@ Validation Loss: Decreases initially but fluctuates in later epochs, showing sig
 
 Model 4 shows slightly less overfitting because it has more stable validation accuracy and less fluctuation in validation loss compared to Model 2. However, both models exhibit some degree of overfitting.
 
+![img](5.png)
 ## Model 5
 
 We use combine original dataset(kaggle) + back-translate + basic augmention (synonym replacement, random insertion, and random deletion) also but adjust this
@@ -161,6 +162,7 @@ The gap between training loss and validation loss widens over epochs, which is a
 
 # Conclusion: Why Model 5 is the Best Choice for the Application
 
+![img](6.png)
 After experimenting with various models and strategies, **Model 5** stands out as the most balanced and effective model for the fake news detection task:
 
 ## **Overfitting Reduction:**
